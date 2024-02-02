@@ -1,0 +1,40 @@
+@import '../../../Styles/global-styles.scss';
+
+footer {
+  background: var(--secondary);
+  margin-top: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+
+  .copyright {
+    font-size: 16px;
+  }
+
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 32px;
+        height: 32px;
+        object-fit: contain;
+      }
+
+      a {
+        text-decoration: none;
+        color: var(--text-color-primary);
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

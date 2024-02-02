@@ -1,0 +1,26 @@
+@import '../../../Styles/global-styles.scss';
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--secondary);
+  height: 40px;
+
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+
+    .header-part {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 25%;
+
+      a {
+        text-decoration: none;
+        color: var(--text-color-primary);
+      }
+    }
+  }
+}

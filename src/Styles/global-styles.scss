@@ -1,0 +1,18 @@
+//Variables
+$primary-color: rgb(255, 255, 255);
+$secondary-color: #c8dee3;
+$tertiary-color: #a1bba1;
+$background-color: #f6f6f6;
+
+$text-color-primary: black;
+$text-color-secondary: white;
+
+:root {
+  --primary: #{$primary-color};
+  --secondary: #{$secondary-color};
+  --tertiary: #{$tertiary-color};
+  --background-color: #{$background-color};
+
+  --text-color-primary: #{$text-color-primary};
+  --text-color-secondary: #{$text-color-secondary};
+}

@@ -1,0 +1,20 @@
+{
+  "project": [
+    {
+      "id": 1,
+      "name": "Oh My Food",
+      "description": "Projet façade pour un site restauration.",
+      "image": ["./Assets/Projects/OhMyFood.png"],
+      "github": "https://github.com/Adrien-Cros/OhMyFood",
+      "techo": ["HTML", "CSS", "Javascript", "Sass"]
+    },
+    {
+      "id": 2,
+      "name": "Kasa",
+      "description": "Projet façade pour un site de location.",
+      "image": ["./Assets/Projects/Kasa.png"],
+      "github": "https://github.com/Adrien-Cros/P8-Kasa",
+      "techo": ["HTML", "CSS", "Javascript", "Sass", "React.js"]
+    }
+  ]
+}

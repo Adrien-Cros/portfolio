@@ -1,0 +1,34 @@
+{
+  "techno": [
+    {
+      "id": 1,
+      "name": "HTML",
+      "icon": "./Assets/Techno/html5.png"
+    },
+    {
+      "id": 2,
+      "name": "CSS",
+      "icon": "./Assets/Techno/css.png"
+    },
+    {
+      "id": 3,
+      "name": "Javascript",
+      "icon": "./Assets/Techno/javascript.png"
+    },
+    {
+      "id": 4,
+      "name": "Sass",
+      "icon": "./Assets/Techno/sass.png"
+    },
+    {
+      "id": 5,
+      "name": "React.js",
+      "icon": "./Assets/Techno/react.png"
+    },
+    {
+      "id": 6,
+      "name": "Redux",
+      "icon": "./Assets/Techno/redux.png"
+    }
+  ]
+}
