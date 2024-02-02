@@ -6,4 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background-color);
+  background-image: url('./Assets/background.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }

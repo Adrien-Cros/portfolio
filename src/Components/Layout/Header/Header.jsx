@@ -1,20 +1,33 @@
 import './Header.scss'
 
 function Header() {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId)
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   return (
     <header>
       <nav>
-        <div className="header-part">
-          <a href="#introduction">Introduction</a>
+        <div
+          onClick={() => scrollToSection('introduction')}
+          className="header-part"
+        >
+          Introduction
         </div>
-        <div className="header-part">
-          <a href="#presentation">Présentation</a>
+        <div
+          onClick={() => scrollToSection('presentation')}
+          className="header-part"
+        >
+          Présentation
         </div>
-        <div className="header-part">
-          <a href="#projets">Projets</a>
+        <div onClick={() => scrollToSection('projets')} className="header-part">
+          Projets
         </div>
-        <div className="header-part">
-          <a href="#contact">Contact</a>
+        <div onClick={() => scrollToSection('contact')} className="header-part">
+          Contact
         </div>
       </nav>
     </header>

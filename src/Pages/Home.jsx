@@ -12,6 +12,9 @@ function Home() {
       <Header />
       <main>
         <section className="hero" id="introduction">
+          <div className="progress-bar-container">
+            <div className="progress-bar"></div>
+          </div>
           <div className="introduction-text">
             <h1>Adrien Cros</h1>
             <h2>Développeur Front-End</h2>

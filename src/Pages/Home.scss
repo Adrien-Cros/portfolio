@@ -1,8 +1,40 @@
 @import '../Styles/global-styles.scss';
+
+@keyframes progressBarAnimation {
+  0%,
+  100% {
+    margin-top: -20px;
+    height: 20px;
+  }
+
+  50% {
+    margin-top: 300px;
+    height: 20px;
+  }
+}
+
 main {
   .hero {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+
+    .progress-bar-container {
+      width: 10px;
+      height: 300px;
+      position: relative;
+      overflow: hidden;
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      margin-top: 50px;
+    }
+
+    .progress-bar {
+      height: 0;
+      border-radius: 5px;
+      width: 10px;
+      background-color: black;
+      animation: progressBarAnimation 5s ease-in-out infinite;
+    }
 
     .introduction-text {
       display: flex;
@@ -10,9 +42,10 @@ main {
       justify-content: center;
       margin: 50px;
       padding: 20px;
-      border: 6px solid var(--secondary);
+      border: 6px solid var(--tertiary);
       border-radius: 20px;
       width: 35%;
+      background-color: var(--background-color);
 
       h1 {
         display: flex;
