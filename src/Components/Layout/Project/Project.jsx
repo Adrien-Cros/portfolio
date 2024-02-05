@@ -27,7 +27,9 @@ function Project() {
           </div>
           <div className="github-container">
             <img src={githubIcon} alt="Github" />
-            <a href={project.github}>GitHub</a>
+            <a href={project.github} target="_blank" rel="noreferrer">
+              GitHub
+            </a>
           </div>
 
           <div className="project-techno">

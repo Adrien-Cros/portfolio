@@ -10,13 +10,23 @@ function Footer() {
       <div className="contact-container">
         <div>
           <img src={linkedinIcon} alt="Linkedin" />
-          <a href="https://www.linkedin.com/in/adrien-cros-b87350278/">
+          <a
+            href="https://www.linkedin.com/in/adrien-cros-b87350278/"
+            target="_blank"
+            rel="noreferrer"
+          >
             Linkedin
           </a>
         </div>
         <div>
           <img src={githubIcon} alt="Github" />
-          <a href="https://github.com/Adrien-Cros">Github</a>
+          <a
+            href="https://github.com/Adrien-Cros"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github
+          </a>
         </div>
       </div>
     </footer>
