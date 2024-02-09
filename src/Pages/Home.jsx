@@ -2,7 +2,10 @@ import portrait from '../Assets/adrien.jpg'
 
 import Header from '../Components/Layout/Header/Header'
 import Footer from '../Components/Layout/Footer/Footer'
-import Project from '../Components/Layout/Project/Project'
+//import Project from '../Components/Layout/Project/Project'
+import Projet from '../Components/Layout/Projet/Projet'
+import ContactForm from '../Components/ContactForm/ContactForm'
+import Presentation from '../Components/Layout/Presentation/Presentation'
 
 import './Home.scss'
 
@@ -27,7 +30,9 @@ function Home() {
             <div className="progress-bar"></div>
           </div>
         </section>
-        <Project />
+        <Presentation />
+        <Projet />
+        <ContactForm />
       </main>
       <Footer />
     </>

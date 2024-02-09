@@ -1,0 +1,87 @@
+@import '../../../Styles/global-styles.scss';
+
+.projet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--background-color);
+
+  &-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 70%;
+
+    .modal-informations {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  &-card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid black;
+    transition: all 250ms;
+
+    &:hover {
+      border: 2px solid red;
+      transform: scale(1.05);
+      -webkit-box-shadow: 0px 7px 19px 1px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 7px 19px 1px rgba(0, 0, 0, 0.75);
+      cursor: pointer;
+    }
+
+    figcaption {
+      z-index: 10;
+      position: absolute;
+      background: var(--tertiary);
+      opacity: 0;
+      width: 80%;
+      height: 80%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 500ms;
+      text-align: center;
+    }
+
+    &:hover figcaption {
+      opacity: 0.9;
+    }
+  }
+
+  &-img {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+  }
+
+  &-title {
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    font-size: var(--font-size-title);
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+}

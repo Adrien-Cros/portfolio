@@ -1,0 +1,12 @@
+@import '../../Styles/global-styles.scss';
+.data-name {
+  font-size: 16px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+ul {
+  margin: 0;
+  font-size: var(--font-size-text);
+  font-weight: bold;
+}

@@ -2,17 +2,44 @@
 $primary-color: rgb(255, 255, 255);
 $secondary-color: #c8dee3;
 $tertiary-color: #a1bba1;
-$background-color: #d9cec3;
+$background-color: white;
+$background-color-secondary: #d2d2d2;
 
 $text-color-primary: black;
 $text-color-secondary: white;
+
+$font-size-main: 90px;
+$font-size-big-title: 60px;
+$font-size-title: 22px;
+$font-size-text: 14px;
 
 :root {
   --primary: #{$primary-color};
   --secondary: #{$secondary-color};
   --tertiary: #{$tertiary-color};
   --background-color: #{$background-color};
+  --background-color-secondary: #{$background-color-secondary};
 
   --text-color-primary: #{$text-color-primary};
   --text-color-secondary: #{$text-color-secondary};
+
+  --font-size-main: #{$font-size-main};
+  --font-size-big-title: #{$font-size-big-title};
+  --font-size-title: #{$font-size-title};
+  --font-size-text: #{$font-size-text};
+}
+
+hr {
+  border: none;
+  width: 75%;
+  border-top: 8px double white;
+}
+
+h1,
+h2 {
+  font-size: var(--font-size-main);
+}
+
+.-padding-bot-40 {
+  padding-bottom: 40px;
 }

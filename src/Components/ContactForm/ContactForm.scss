@@ -1,0 +1,52 @@
+@import '../../Styles/global-styles.scss';
+
+.contact {
+  align-items: center;
+  align-self: center;
+  width: 30%;
+  padding: 20px;
+  background-color: var(--background-color);
+  font-size: var(--font-size-text);
+  font-weight: bold;
+
+  .-flex-center {
+    display: flex;
+    justify-content: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .name-container {
+      gap: 20px;
+    }
+
+    .mail-container {
+      flex-direction: column;
+    }
+
+    .informations-container {
+      flex-direction: column;
+
+      textarea {
+        resize: none;
+      }
+    }
+
+    .submit-btn {
+      align-items: center;
+      align-self: center;
+      background: black;
+      border: 2px solid transparent;
+      color: white;
+      width: 50%;
+
+      &:hover {
+        cursor: pointer;
+        border: 2px solid red;
+      }
+    }
+  }
+}

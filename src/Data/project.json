@@ -3,29 +3,53 @@
     {
       "id": 1,
       "name": "Oh My Food",
-      "description": "Projet façade pour un site restauration.",
-      "image": [
-        "./Assets/Projects/OhMyFood/OhMyFood.png",
-        "./Assets/Projects/OhMyFood/OhMyFood2.png"
-      ],
+      "description": "Projet vitrine pour un site de restauration.",
+      "icon": "./Assets/Projects/OhMyFood/OhMyFood.png",
+      "image": "./Assets/Projects/OhMyFood/OhMyFood2.png",
       "github": "https://github.com/Adrien-Cros/OhMyFood",
-      "techo": ["HTML", "CSS", "Javascript", "Sass"]
+      "repoName": "OhMyFood",
+      "techno": ["HTML", "CSS", "Sass"],
+      "objectif": "Créer un projet vitrine pour un site de restauration, création de tout le site de A à Z."
     },
     {
       "id": 2,
       "name": "Kasa",
-      "description": "Projet façade pour un site de location.",
-      "image": ["./Assets/Projects/Kasa/Kasa.png"],
+      "description": "Projet vitrine pour un site de location.",
+      "icon": "./Assets/Projects/Kasa/Kasa.png",
+      "image": "./Assets/Projects/Kasa/Kasa.png",
       "github": "https://github.com/Adrien-Cros/P8-Kasa",
-      "techo": ["HTML", "CSS", "Javascript", "Sass", "React.js"]
+      "repoName": "P8-Kasa",
+      "techno": ["HTML", "CSS", "Javascript", "React.js"]
     },
     {
       "id": 3,
       "name": "ArgentBank",
-      "description": "Projet façade pour une banque.",
-      "image": ["./Assets/Projects/ArgentBank/ArgentBank.png"],
+      "description": "Projet vitrine pour une banque.",
+      "icon": "./Assets/Projects/ArgentBank/ArgentBank.png",
+      "image": "./Assets/Projects/ArgentBank/ArgentBank.png",
       "github": "https://github.com/Adrien-Cros/ArgentBank-website",
-      "techo": ["HTML", "CSS", "Javascript", "Sass", "React.js", "Redux"]
+      "repoName": "ArgentBank-website",
+      "techno": ["HTML", "CSS", "Javascript", "React.js", "Redux"]
+    },
+    {
+      "id": 4,
+      "name": "Portfolio Sophie",
+      "description": "Projet portfolio pour une architecte.",
+      "icon": "./Assets/Projects/Sophie/Sophie1.png",
+      "image": "./Assets/Projects/Sophie/Sophie2.png",
+      "github": "https://github.com/Adrien-Cros/P6-Sophie-Bluel",
+      "repoName": "P6-Sophie-Bluel",
+      "techno": ["HTML", "CSS", "Javascript", "Sass"]
+    },
+    {
+      "id": 5,
+      "name": "Monster Catcher [BETA]",
+      "description": "Projet de jeu de capture de monstres.",
+      "icon": "./Assets/Projects/Ekrasys/Ekrasys1.png",
+      "image": "./Assets/Projects/Ekrasys/Ekrasys2.png",
+      "github": "https://github.com/Adrien-Cros/Ekrasys-Monster-Catcher",
+      "repoName": "Ekrasys-Monster-Catcher",
+      "techno": ["HTML", "CSS", "Javascript", "Sass", "React.js", "Redux"]
     }
   ]
 }

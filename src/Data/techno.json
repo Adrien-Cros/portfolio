@@ -29,6 +29,21 @@
       "id": 6,
       "name": "Redux",
       "icon": "./Assets/Techno/redux.png"
+    },
+    {
+      "id": 7,
+      "name": "Node.js",
+      "icon": "./Assets/Techno/nodejs.png"
+    },
+    {
+      "id": 8,
+      "name": "Express",
+      "icon": "./Assets/Techno/express.png"
+    },
+    {
+      "id": 9,
+      "name": "MongoDB",
+      "icon": "./Assets/Techno/mongodb.png"
     }
   ]
 }

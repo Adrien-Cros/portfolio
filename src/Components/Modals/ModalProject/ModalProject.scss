@@ -1,0 +1,101 @@
+@import '../../../Styles/global-styles.scss';
+
+@keyframes modal-appear {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.modal-apparition {
+  animation: modal-appear 0.35s ease forwards;
+}
+
+.modal-project {
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  width: 400px;
+  height: 450px;
+  border: 2px solid black;
+  background: var(--background-color);
+  left: 50%;
+  top: 50%;
+  padding: 5px;
+
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h4 {
+      display: flex;
+      font-size: var(--font-size-title);
+      margin: 0;
+    }
+
+    .modal-project-close {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 24px;
+      height: 24px;
+      border: 2px solid black;
+      font-weight: bold;
+      transition: all 250ms;
+      font-size: var(--font-size-title);
+
+      &:hover {
+        cursor: pointer;
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+
+    .modal-github-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      font-size: var(--font-size-title);
+      text-decoration: none;
+      width: 25%;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .modal-image {
+      width: 100%;
+      height: 40%;
+      object-fit: cover;
+    }
+
+    .modal-tech-image {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+    }
+
+    .modal-informations {
+      font-size: var(--font-size-text);
+    }
+  }
+}
