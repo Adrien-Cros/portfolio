@@ -13,21 +13,10 @@ $font-size-big-title: 60px;
 $font-size-title: 22px;
 $font-size-text: 14px;
 
-:root {
-  --primary: #{$primary-color};
-  --secondary: #{$secondary-color};
-  --tertiary: #{$tertiary-color};
-  --background-color: #{$background-color};
-  --background-color-secondary: #{$background-color-secondary};
-
-  --text-color-primary: #{$text-color-primary};
-  --text-color-secondary: #{$text-color-secondary};
-
-  --font-size-main: #{$font-size-main};
-  --font-size-big-title: #{$font-size-big-title};
-  --font-size-title: #{$font-size-title};
-  --font-size-text: #{$font-size-text};
-}
+$breakpoints-1200: 1200px;
+$laptop-breakpoints: 1024px;
+$tablets-breakpoints: 768px;
+$mobile-breakpoints: 480px;
 
 hr {
   border: none;
@@ -37,7 +26,14 @@ hr {
 
 h1,
 h2 {
-  font-size: var(--font-size-main);
+  font-size: $font-size-main;
+}
+
+h4 {
+  display: flex;
+  justify-content: center;
+  font-size: $font-size-title;
+  margin: 0;
 }
 
 .-padding-bot-40 {

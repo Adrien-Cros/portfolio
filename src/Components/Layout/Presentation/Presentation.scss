@@ -4,7 +4,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--background-color);
+  background-color: $background-color;
+
+  h2 {
+    @media (max-width: $mobile-breakpoints) {
+      font-size: $font-size-big-title;
+    }
+  }
 
   &-text {
     display: flex;
@@ -12,18 +18,29 @@
     gap: 30px;
     line-height: 45px;
     width: 50%;
-    font-size: var(--font-size-title);
+    font-size: $font-size-title;
     padding: 20px;
 
+    @media (max-width: $mobile-breakpoints) {
+      font-size: $font-size-text;
+    }
+
     span {
-      font-size: var(--font-size-title);
+      font-size: $font-size-title;
       font-style: italic;
       font-weight: bold;
+
+      @media (max-width: $mobile-breakpoints) {
+        font-size: $font-size-text;
+      }
     }
 
     p {
       text-align: center;
       margin: 0;
+      @media (max-width: $mobile-breakpoints) {
+        line-height: 24px;
+      }
     }
   }
 
@@ -34,11 +51,19 @@
     flex-direction: column;
     gap: 20px;
     width: 50%;
-    font-size: var(--font-size-big-title);
+    font-size: $font-size-big-title;
+
+    @media (max-width: $mobile-breakpoints) {
+      margin-top: 30px;
+    }
 
     h3 {
-      font-size: 2vw;
+      font-size: $font-size-title;
       margin: 10px 0 0 10px;
+
+      @media (max-width: $mobile-breakpoints) {
+        font-size: $font-size-text;
+      }
     }
 
     &-container {
@@ -55,7 +80,7 @@
         font-weight: bold;
         width: 50px;
         height: 80px;
-        font-size: var(--font-size-text);
+        font-size: $font-size-text;
 
         img {
           width: 48px;

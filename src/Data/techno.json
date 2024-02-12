@@ -45,5 +45,27 @@
       "name": "MongoDB",
       "icon": "./Assets/Techno/mongodb.png"
     }
+  ],
+  "connaissance": [
+    {
+      "id": 1,
+      "name": "VueJS",
+      "icon": "./Assets/Techno/vuejs.png"
+    },
+    {
+      "id": 2,
+      "name": "PHP",
+      "icon": "./Assets/Techno/php.png"
+    },
+    {
+      "id": 3,
+      "name": "SQL",
+      "icon": "./Assets/Techno/sql.png"
+    },
+    {
+      "id": 4,
+      "name": "Symfony",
+      "icon": "./Assets/Techno/symfony.png"
+    }
   ]
 }

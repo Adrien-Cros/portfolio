@@ -1,4 +1,4 @@
-import portrait from '../Assets/adrien.jpg'
+import portrait from '../Assets/adrien.png'
 
 import Header from '../Components/Layout/Header/Header'
 import Footer from '../Components/Layout/Footer/Footer'

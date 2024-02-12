@@ -5,5 +5,5 @@ body {
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: var(--background-color-secondary);
+  background: $background-color-secondary;
 }

@@ -5,9 +5,13 @@
   align-self: center;
   width: 30%;
   padding: 20px;
-  background-color: var(--background-color);
-  font-size: var(--font-size-text);
+  background-color: $background-color;
+  font-size: $font-size-text;
   font-weight: bold;
+
+  @media (max-width: $tablets-breakpoints) {
+    width: 80%;
+  }
 
   .-flex-center {
     display: flex;
@@ -15,12 +19,19 @@
   }
 
   form {
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: space-around;
+    height: 380px;
 
     .name-container {
       gap: 20px;
+
+      @media (max-width: 1500px) {
+        flex-direction: column;
+        gap: 0;
+      }
     }
 
     .mail-container {
@@ -42,6 +53,8 @@
       border: 2px solid transparent;
       color: white;
       width: 50%;
+      font-size: $font-size-text;
+      font-weight: bold;
 
       &:hover {
         cursor: pointer;

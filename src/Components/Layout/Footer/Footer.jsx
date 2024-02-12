@@ -7,6 +7,7 @@ function Footer() {
   return (
     <footer>
       <div className="copyright">@Copyright Adrien Cros</div>
+      <div className="copyright">En cour de construction</div>
       <div className="contact-container">
         <div>
           <img src={linkedinIcon} alt="Linkedin" />

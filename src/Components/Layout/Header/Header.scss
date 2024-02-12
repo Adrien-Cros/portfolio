@@ -4,7 +4,7 @@ header {
   position: fixed;
   z-index: 1000;
   width: 100%;
-  background-color: var(--primary);
+  background-color: $primary-color;
   height: 40px;
 
   nav {
@@ -18,9 +18,13 @@ header {
       align-items: center;
       width: 25%;
       border: 2px solid black;
-      color: var(--text-color-primary);
-      font-size: var(--font-size-title);
+      color: $text-color-primary;
+      font-size: $font-size-title;
       transition: all 350ms ease;
+
+      @media (max-width: 550px) {
+        font-size: $font-size-text;
+      }
 
       &:hover {
         background: black;

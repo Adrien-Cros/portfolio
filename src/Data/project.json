@@ -19,7 +19,8 @@
       "image": "./Assets/Projects/Kasa/Kasa.png",
       "github": "https://github.com/Adrien-Cros/P8-Kasa",
       "repoName": "P8-Kasa",
-      "techno": ["HTML", "CSS", "Javascript", "React.js"]
+      "techno": ["HTML", "CSS", "Javascript", "React.js"],
+      "objectif": "Création d'une single-page application avec ReactJS pour un site de location."
     },
     {
       "id": 3,
@@ -29,7 +30,8 @@
       "image": "./Assets/Projects/ArgentBank/ArgentBank.png",
       "github": "https://github.com/Adrien-Cros/ArgentBank-website",
       "repoName": "ArgentBank-website",
-      "techno": ["HTML", "CSS", "Javascript", "React.js", "Redux"]
+      "techno": ["HTML", "CSS", "Javascript", "React.js", "Redux"],
+      "objectif": "Gestion de la connection d'un utilisateur avec react et redux pour une banque."
     },
     {
       "id": 4,
@@ -39,7 +41,8 @@
       "image": "./Assets/Projects/Sophie/Sophie2.png",
       "github": "https://github.com/Adrien-Cros/P6-Sophie-Bluel",
       "repoName": "P6-Sophie-Bluel",
-      "techno": ["HTML", "CSS", "Javascript", "Sass"]
+      "techno": ["HTML", "CSS", "Javascript", "Sass"],
+      "objectif": "Gestion d'un portfolio pour une architect, possibilité de rajouter, modifier ou supprimer des projets."
     },
     {
       "id": 5,
@@ -49,7 +52,8 @@
       "image": "./Assets/Projects/Ekrasys/Ekrasys2.png",
       "github": "https://github.com/Adrien-Cros/Ekrasys-Monster-Catcher",
       "repoName": "Ekrasys-Monster-Catcher",
-      "techno": ["HTML", "CSS", "Javascript", "Sass", "React.js", "Redux"]
+      "techno": ["HTML", "CSS", "Javascript", "Sass", "React.js", "Redux"],
+      "objectif": "Petit jeu de capture de monstre, gestion du jeu avec react/redux/js."
     }
   ]
 }

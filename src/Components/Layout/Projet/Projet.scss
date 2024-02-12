@@ -5,7 +5,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--background-color);
+  background: $background-color;
+
+  h2 {
+    @media (max-width: $mobile-breakpoints) {
+      font-size: $font-size-big-title;
+    }
+  }
 
   &-container {
     display: flex;
@@ -30,18 +36,24 @@
     border: 2px solid black;
     transition: all 250ms;
 
+    @media (max-width: $mobile-breakpoints) {
+      width: 200px;
+      height: 200px;
+    }
+
     &:hover {
       border: 2px solid red;
       transform: scale(1.05);
       -webkit-box-shadow: 0px 7px 19px 1px rgba(0, 0, 0, 0.75);
       box-shadow: 0px 7px 19px 1px rgba(0, 0, 0, 0.75);
       cursor: pointer;
+      transform: scale(1.15);
     }
 
     figcaption {
       z-index: 10;
       position: absolute;
-      background: var(--tertiary);
+      background: $tertiary-color;
       opacity: 0;
       width: 80%;
       height: 80%;
@@ -72,7 +84,7 @@
     display: flex;
     justify-content: center;
     height: 10%;
-    font-size: var(--font-size-title);
+    font-size: $font-size-title;
   }
 }
 

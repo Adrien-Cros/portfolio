@@ -3,6 +3,8 @@ import techData from '../../../Data/techno.json'
 
 function Presentation() {
   const techList = techData.techno
+  const connaissanceTechList = techData.connaissance
+
   return (
     <>
       <hr />
@@ -14,6 +16,7 @@ function Presentation() {
             désireux d'apprendre et de progresser dans ce domaine dynamique et
             en constante évolution.
             <span>
+              {' '}
               Actuellement à la recherche d'une opportunité professionnelle
             </span>
             , je suis enthousiaste à l'idée de contribuer à des projets
@@ -30,6 +33,17 @@ function Presentation() {
           <h3>J'ai déjà travaillé avec: </h3>
           <div className="presentation-tech-container">
             {techList.map((tech, index) => (
+              <div key={tech.name}>
+                <span>{tech.name}</span>
+                <img src={tech.icon} alt={tech.name} />
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="presentation-tech">
+          <h3>J'ai quelques notions: </h3>
+          <div className="presentation-tech-container">
+            {connaissanceTechList.map((tech, index) => (
               <div key={tech.name}>
                 <span>{tech.name}</span>
                 <img src={tech.icon} alt={tech.name} />

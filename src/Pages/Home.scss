@@ -29,6 +29,12 @@ main {
 
     &-container {
       display: flex;
+      align-items: center;
+      width: 90%;
+
+      @media (max-width: $laptop-breakpoints) {
+        flex-direction: column;
+      }
     }
 
     .progress-bar-container {
@@ -53,38 +59,59 @@ main {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin: 50px;
       padding: 20px;
-      border: 6px solid var(--tertiary);
+      border: 6px solid $tertiary-color;
       border-radius: 20px;
       width: 50%;
-      background-color: var(--background-color);
+      height: 80%;
+      background-color: $background-color;
+
+      @media (max-width: $breakpoints-1200) {
+        padding: 30px;
+      }
+
+      @media (max-width: $laptop-breakpoints) {
+        width: 80%;
+        margin-top: 100px;
+      }
+
+      @media (max-width: $mobile-breakpoints) {
+        margin: 0;
+      }
 
       h1 {
         display: flex;
         justify-content: flex-start;
         margin: 0;
-        color: var(--text-color-primary);
-        font-size: var(--font-size-main);
+        color: $text-color-primary;
+        font-size: $font-size-main;
+
+        @media (max-width: $mobile-breakpoints) {
+          font-size: $font-size-big-title;
+          text-align: center;
+        }
       }
 
       h2 {
-        font-size: var(--font-size-big-title);
+        font-size: $font-size-big-title;
+
+        @media (max-width: $mobile-breakpoints) {
+          font-size: $font-size-title;
+        }
       }
 
       p {
         display: flex;
         justify-content: flex-start;
-        font-size: var(--font-size-title);
+        font-size: $font-size-title;
       }
     }
 
     img {
       width: 50%;
       margin: 20px;
+      height: 80%;
       object-fit: contain;
-      border-radius: 110px;
-      border: 6px solid var(--tertiary);
     }
   }
 }

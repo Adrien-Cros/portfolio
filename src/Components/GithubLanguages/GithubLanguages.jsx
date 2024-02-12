@@ -18,7 +18,7 @@ function GitHubLanguages({ repoName }) {
     }
 
     fetchLanguages()
-  }, [])
+  }, [repoName])
 
   const totalLines = Object.values(languages).reduce((acc, val) => acc + val, 0)
 
