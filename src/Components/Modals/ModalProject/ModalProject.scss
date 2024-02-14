@@ -20,7 +20,6 @@
   display: flex;
   flex-direction: column;
   z-index: 999;
-  width: 25%;
   width: 400px;
   height: auto;
   border: 2px solid black;
@@ -28,6 +27,10 @@
   left: 50%;
   top: 50%;
   padding: 5px;
+
+  @media (max-width: $tablets-breakpoints) {
+    width: 300px;
+  }
 
   &-header {
     display: flex;

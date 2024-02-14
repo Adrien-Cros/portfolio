@@ -4,7 +4,7 @@ import './ContactForm.scss'
 import { useEffect } from 'react'
 
 function ContactForm() {
-  const [informationsSent, setInformationsSent] = useState(false)
+  const [logMsg, setLogMsg] = useState('')
 
   const handleSubmit = (event) => {
     event.preventDefault()
@@ -13,32 +13,21 @@ function ContactForm() {
     const mail = event.target.mail.value
     const info = event.target.informations.value
 
-    if (lastName === '') {
-      console.log('Le nom ne doit pas être vide.')
-    }
-    if (firstName === '') {
-      console.log('Le prenom ne doit pas être vide.')
-    }
-    if (mail === '') {
-      console.log('Le mail ne doit pas être vide.')
-    }
-    if (info === '') {
-      console.log('Les informations ne doivent pas être vide.')
-    }
-
     if (lastName && firstName && mail && info) {
-      setInformationsSent(true)
-      console.log('Les informations on été envoyer avec succès.')
+      setLogMsg('Les informations on été envoyer avec succès. (pas vraiment)')
+    } else {
+      setLogMsg('Toute les champs doivent être remplis.')
     }
   }
 
+  // Clear sending message
   useEffect(() => {
     const timeoutId = setTimeout(() => {
-      setInformationsSent(false)
+      setLogMsg('')
     }, 2000)
 
     return () => clearTimeout(timeoutId)
-  }, [informationsSent])
+  }, [logMsg])
 
   return (
     <>
@@ -62,9 +51,7 @@ function ContactForm() {
           </div>
           <button className="submit-btn -flex-center">Envoyer</button>
         </form>
-        {informationsSent && (
-          <div>Les informations ont été envoyées avec succès.</div>
-        )}
+        {logMsg !== '' && <div>{logMsg}</div>}
       </section>
     </>
   )

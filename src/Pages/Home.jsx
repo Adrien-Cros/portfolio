@@ -2,7 +2,6 @@ import portrait from '../Assets/adrien.png'
 
 import Header from '../Components/Layout/Header/Header'
 import Footer from '../Components/Layout/Footer/Footer'
-//import Project from '../Components/Layout/Project/Project'
 import Projet from '../Components/Layout/Projet/Projet'
 import ContactForm from '../Components/ContactForm/ContactForm'
 import Presentation from '../Components/Layout/Presentation/Presentation'
@@ -18,7 +17,9 @@ function Home() {
           <div className="hero-container">
             <div className="introduction-text">
               <h1>Adrien Cros</h1>
-              <h2>Développeur Front-End</h2>
+              <h2>
+                Développeur <span className="animated-text"> Front-End</span>
+              </h2>
               <p>
                 Jeune développeur de 31 ans, je suis passioné par le web depuis
                 ma jeunesse.

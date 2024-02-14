@@ -54,16 +54,21 @@
     },
     {
       "id": 2,
+      "name": "JQuery",
+      "icon": "./Assets/Techno/jquery.png"
+    },
+    {
+      "id": 3,
       "name": "PHP",
       "icon": "./Assets/Techno/php.png"
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "SQL",
       "icon": "./Assets/Techno/sql.png"
     },
     {
-      "id": 4,
+      "id": 5,
       "name": "Symfony",
       "icon": "./Assets/Techno/symfony.png"
     }
