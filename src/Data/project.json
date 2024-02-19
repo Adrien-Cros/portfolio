@@ -3,35 +3,52 @@
     {
       "id": 1,
       "name": "Oh My Food",
-      "description": "Projet vitrine pour un site de restauration.",
+      "description": "Projet vitrine pour un site de restauration en mobile first.",
       "icon": "./Assets/Projects/OhMyFood/OhMyFood.png",
       "image": "./Assets/Projects/OhMyFood/OhMyFood2.png",
       "github": "https://github.com/Adrien-Cros/OhMyFood",
       "repoName": "OhMyFood",
       "techno": ["HTML", "CSS", "Sass"],
-      "objectif": "Créer un projet vitrine pour un site de restauration, création de tout le site de A à Z."
+      "objectif": [
+        "Développer un site “mobile first” qui répertorie les menus de restaurants gastronomiques.",
+        "Le site doit être responsive et en “mobile first”.",
+        "Intégration des animations en SASS."
+      ]
     },
     {
       "id": 2,
       "name": "Kasa",
       "description": "Projet vitrine pour un site de location.",
       "icon": "./Assets/Projects/Kasa/Kasa.png",
-      "image": "./Assets/Projects/Kasa/Kasa.png",
+      "image": "./Assets/Projects/Kasa/Kasa2.png",
       "github": "https://github.com/Adrien-Cros/P8-Kasa",
       "repoName": "P8-Kasa",
       "techno": ["HTML", "CSS", "Javascript", "React.js"],
-      "objectif": "Création d'une single-page application avec ReactJS pour un site de location."
+      "objectif": [
+        "Création d'une single-page application avec ReactJS pour un site de location.",
+        "Utilisation de React-Router.",
+        "Gérer les requêtes provenant d'une API Rest.",
+        "Tout le style CSS doit être codé en utilisant Sass.",
+        "Le site doit être responsive."
+      ]
     },
     {
       "id": 3,
       "name": "ArgentBank",
       "description": "Projet vitrine pour une banque.",
       "icon": "./Assets/Projects/ArgentBank/ArgentBank.png",
-      "image": "./Assets/Projects/ArgentBank/ArgentBank.png",
+      "image": "./Assets/Projects/ArgentBank/ArgentBank2.png",
       "github": "https://github.com/Adrien-Cros/ArgentBank-website",
       "repoName": "ArgentBank-website",
       "techno": ["HTML", "CSS", "Javascript", "React.js", "Redux"],
-      "objectif": "Gestion de la connection d'un utilisateur avec react et redux pour une banque."
+      "objectif": [
+        "Gestion de la connection d'un utilisateur avec react et redux pour une banque.",
+        "Transformer une page HTML static en single-page APP avec ReactJS.",
+        "Utiliser Redux pour gérer le state de l'ensemble de l'application.",
+        "Gérer les requêtes provenant d'une API avec mongoDB.",
+        "Utilisation des bonnes pratiques de Green Code.",
+        "Créer un fichier YAML avec la syntaxe Swagger pour un back-end avec les endpoints nécessaires."
+      ]
     },
     {
       "id": 4,
@@ -42,8 +59,29 @@
       "github": "https://github.com/Adrien-Cros/P6-Sophie-Bluel",
       "repoName": "P6-Sophie-Bluel",
       "techno": ["HTML", "CSS", "Javascript", "Sass"],
-      "objectif": "Gestion d'un portfolio pour une architect, possibilité de rajouter, modifier ou supprimer des projets."
+      "objectif": [
+        "Gestion d'un portfolio pour une architecte, possibilité de rajouter, modifier ou supprimer des projets.",
+        "Gestion de la connection utilisateur avec JWToken via une API.",
+        "Gestion de l'ajout, suppression et modification des projets si connecté en admin."
+      ]
     },
+    {
+      "id": 5,
+      "name": "77 Events",
+      "description": "Site de présentation pour 77 Events.",
+      "icon": "./Assets/Projects/77Events/77Events.png",
+      "image": "./Assets/Projects/77Events/77Events2.png",
+      "github": "https://github.com/Adrien-Cros/P10-D-buggez",
+      "repoName": "P10-D-buggez",
+      "techno": ["HTML", "CSS", "Javascript", "Sass", "React.js"],
+      "objectif": [
+        "Terminez le site web.",
+        "Débugger le site.",
+        "Rédaction d'un cahier de recette."
+      ]
+    }
+  ],
+  "perso": [
     {
       "id": 5,
       "name": "Monster Catcher [BETA]",
@@ -53,7 +91,9 @@
       "github": "https://github.com/Adrien-Cros/Ekrasys-Monster-Catcher",
       "repoName": "Ekrasys-Monster-Catcher",
       "techno": ["HTML", "CSS", "Javascript", "Sass", "React.js", "Redux"],
-      "objectif": "Petit jeu de capture de monstre, gestion du jeu avec react/redux/js."
+      "objectif": [
+        "Petit jeu de capture de monstre, gestion du jeu avec react/redux/js."
+      ]
     }
   ]
 }

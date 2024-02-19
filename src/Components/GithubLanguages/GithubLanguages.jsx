@@ -22,15 +22,27 @@ function GitHubLanguages({ repoName }) {
 
   const totalLines = Object.values(languages).reduce((acc, val) => acc + val, 0)
 
+  function percentHelpers(lines, totalLines) {
+    return ((lines / totalLines) * 100).toFixed(2)
+  }
+
   return (
     <>
       {totalLines > 0 && (
         <>
-          <div className="data-name"> Github Data:</div>
-          <ul>
+          <div className="data-name"> Github Data via Github API:</div>
+          <ul className="language-list">
             {Object.entries(languages).map(([language, lines], index) => (
               <li key={index}>
-                {language}: {((lines / totalLines) * 100).toFixed(2)}%
+                {language}: {percentHelpers(lines, totalLines)}% :
+                <div className="lang-bar-container">
+                  <div
+                    className="lang-bar"
+                    style={{
+                      width: `${percentHelpers(lines, totalLines)}%`,
+                    }}
+                  ></div>
+                </div>
               </li>
             ))}
           </ul>

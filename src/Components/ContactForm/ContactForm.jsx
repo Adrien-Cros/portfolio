@@ -16,7 +16,7 @@ function ContactForm() {
     if (lastName && firstName && mail && info) {
       setLogMsg('Les informations on été envoyer avec succès. (pas vraiment)')
     } else {
-      setLogMsg('Toute les champs doivent être remplis.')
+      setLogMsg('Tout les champs doivent être remplis.')
     }
   }
 

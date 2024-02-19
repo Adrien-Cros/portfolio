@@ -7,6 +7,14 @@
   align-items: center;
   background: $background-color;
 
+  .cut {
+    width: 80%;
+    height: 8px;
+    background: $tertiary-color;
+    border-radius: 8px;
+    margin-top: 70px;
+  }
+
   h2 {
     @media (max-width: $mobile-breakpoints) {
       font-size: $font-size-big-title;
@@ -42,7 +50,7 @@
     }
 
     &:hover {
-      border: 2px solid red;
+      border: 2px solid $other-color;
       transform: scale(1.05);
       -webkit-box-shadow: 0px 7px 19px 1px rgba(0, 0, 0, 0.75);
       box-shadow: 0px 7px 19px 1px rgba(0, 0, 0, 0.75);

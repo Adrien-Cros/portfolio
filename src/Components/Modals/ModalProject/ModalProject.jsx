@@ -28,7 +28,13 @@ function ModalProject({ projet, OnClick }) {
         <img className="modal-image" src={projet.image} alt={projet.name} />
         <div className="modal-informations">
           <div className="modal-description">{projet.description}</div>
-          <div className="modal-objectif">{projet.objectif}</div>
+          <div className="modal-objectif">
+            <ul>
+              {projet.objectif.map((objectif, index) => (
+                <li key={index}>{objectif}</li>
+              ))}
+            </ul>
+          </div>
           <div className="modal-techno">
             {projet.techno.map((technoName, index) => {
               const technoImg = technoList.find(
