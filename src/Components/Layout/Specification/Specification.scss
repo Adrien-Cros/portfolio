@@ -1,0 +1,138 @@
+@import '../../../Styles/global-styles.scss';
+
+@keyframes fill-bar {
+  0%,
+  15%,
+  100% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+}
+
+@keyframes scaling {
+  0%,
+  33%,
+  66%,
+  100% {
+    border: 4px solid transparent;
+    transform: scale(1);
+  }
+  50% {
+    border: 4px solid $other-color;
+    transform: scale(1.1);
+  }
+}
+
+.specification {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: $tertiary-color;
+  padding: 20px 0 20px 0;
+  height: 250px;
+
+  @media (max-width: $tablets-breakpoints) {
+    height: 200px;
+  }
+  @media (max-width: $mobile-breakpoints) {
+    height: 120px;
+  }
+
+  .spec-overlay {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+
+    .spec-container {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: $font-size-title;
+      font-weight: bold;
+      width: 142px;
+      height: 142px;
+      background-color: $secondary-color;
+      border: 4px solid transparent;
+      border-radius: 90px;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+      animation: scaling 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+
+      @media (max-width: $tablets-breakpoints) {
+        font-size: $font-size-text;
+        width: 92px;
+        height: 92px;
+      }
+
+      @media (max-width: $mobile-breakpoints) {
+        font-size: 11px;
+        width: 57px;
+        height: 57px;
+      }
+    }
+
+    .spec-bar {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      width: 25%;
+      height: 12px;
+      background: white;
+      z-index: 1;
+      margin-left: calc(33% - 7.5%);
+      top: 50%;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+      .fill-bar-animation {
+        background: rgba($other-color, 0.7);
+        animation: fill-bar 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        height: 12px;
+      }
+    }
+  }
+}
+
+.-top {
+  align-items: flex-start;
+}
+
+.-bot {
+  align-items: flex-end;
+}
+
+.rotate-up {
+  transform: rotateZ(15deg);
+
+  @media (max-width: 1600px) {
+    transform: rotateZ(18deg);
+  }
+  @media (max-width: 1300px) {
+    transform: rotateZ(24deg);
+  }
+  @media (max-width: 1000px) {
+    transform: rotateZ(33deg);
+  }
+}
+
+.rotate-down {
+  transform: rotateZ(-15deg);
+
+  @media (max-width: 1600px) {
+    transform: rotateZ(-18deg);
+  }
+  @media (max-width: 1300px) {
+    transform: rotateZ(-24deg);
+  }
+  @media (max-width: 1000px) {
+    transform: rotateZ(-33deg);
+  }
+}

@@ -36,7 +36,7 @@ function Projet() {
             <ModalProject projet={modalProjetInfo} OnClick={handleCloseModal} />
           )}
         </div>
-        <h2>Projets Client/Cour</h2>
+        <h2>Projets Client</h2>
         <div className="projet-container">
           {projetList.map((projet, index) => (
             <figure

@@ -5,6 +5,7 @@ import Footer from '../Components/Layout/Footer/Footer'
 import Projet from '../Components/Layout/Projet/Projet'
 import ContactForm from '../Components/ContactForm/ContactForm'
 import Presentation from '../Components/Layout/Presentation/Presentation'
+import Specification from '../Components/Layout/Specification/Specification'
 
 import './Home.scss'
 
@@ -32,6 +33,7 @@ function Home() {
           </div>
         </section>
         <Presentation />
+        <Specification />
         <Projet />
         <ContactForm />
       </main>
