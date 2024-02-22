@@ -23,7 +23,7 @@ header {
       transition: all 350ms ease;
 
       @media (max-width: 550px) {
-        font-size: $font-size-text;
+        font-size: 12px;
       }
 
       &:hover {

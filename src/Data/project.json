@@ -92,7 +92,10 @@
       "repoName": "Ekrasys-Monster-Catcher",
       "techno": ["HTML", "CSS", "Javascript", "Sass", "React.js", "Redux"],
       "objectif": [
-        "Petit jeu de capture de monstre, gestion du jeu avec react/redux/js."
+        "Petit jeu de capture de monstre, gestion du jeu avec react/redux/js.",
+        "Génération de monstre aléatoire avec des traits et capacités associé aléatoirement.",
+        "Gestion de l'inventaire, niveau des monstres avec leur scaling.",
+        "Gestion de deux mode de combat, avec génération d'xp et loot."
       ]
     }
   ]

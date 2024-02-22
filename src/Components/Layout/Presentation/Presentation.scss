@@ -23,6 +23,7 @@
 
     @media (max-width: $mobile-breakpoints) {
       font-size: $font-size-text;
+      width: 90%;
     }
 
     span {
@@ -55,6 +56,7 @@
 
     @media (max-width: $mobile-breakpoints) {
       margin-top: 30px;
+      width: 90%;
     }
 
     h3 {

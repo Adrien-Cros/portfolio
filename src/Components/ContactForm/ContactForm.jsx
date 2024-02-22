@@ -1,20 +1,19 @@
-import { useState } from 'react'
-
 import './ContactForm.scss'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 function ContactForm() {
   const [logMsg, setLogMsg] = useState('')
 
   const handleSubmit = (event) => {
     event.preventDefault()
+    event.stopPropagation()
     const lastName = event.target.nom.value
     const firstName = event.target.prenom.value
     const mail = event.target.mail.value
     const info = event.target.informations.value
 
     if (lastName && firstName && mail && info) {
-      setLogMsg('Les informations on été envoyer avec succès. (pas vraiment)')
+      setLogMsg('Les informations ont été envoyées avec succès. (pas vraiment)')
     } else {
       setLogMsg('Tout les champs doivent être remplis.')
     }
