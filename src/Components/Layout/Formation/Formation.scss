@@ -14,15 +14,26 @@
     gap: 20px;
     width: 95%;
 
+    @media (max-width: $mobile-breakpoints) {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .formation {
       width: 50%;
+
+      @media (max-width: $mobile-breakpoints) {
+        width: 85%;
+      }
 
       ul {
         display: flex;
         flex-direction: column;
         gap: 5px;
+
         @media (max-width: $mobile-breakpoints) {
-          font-size: 12px;
+          padding: 10px;
+          font-size: $font-size-text;
         }
       }
     }
@@ -39,7 +50,8 @@
         height: 150px;
       }
       @media (max-width: $mobile-breakpoints) {
-        margin-bottom: 20px;
+        height: 100px;
+        margin-bottom: -20px;
       }
 
       .formation-date {
@@ -51,11 +63,15 @@
         color: $primary-color;
 
         @media (max-width: $mobile-breakpoints) {
-          font-size: 16px;
+          font-size: 14px;
         }
       }
       .formation-location {
         font-style: italic;
+        text-align: center;
+        @media (max-width: $mobile-breakpoints) {
+          font-size: 14px;
+        }
       }
     }
 
