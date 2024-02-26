@@ -1,5 +1,5 @@
-import linkedinIcon from '../../../Assets/linkedin.png'
-import githubIcon from '../../../Assets/github.png'
+import linkedinIcon from '../../../Assets/linkedin.webp'
+import githubIcon from '../../../Assets/github.webp'
 
 import './Footer.scss'
 

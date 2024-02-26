@@ -1,14 +1,11 @@
 //Variables
-$primary-color: #87aca3;
-$secondary-color: #c8dee3;
-$tertiary-color: #a1bba1;
+$primary-color: #0c2d48;
+$secondary-color: white;
+$tertiary-color: #050a30;
 $other-color: red;
 
-$background-color: white;
-$background-color-secondary: #d2d2d2;
-
-$text-color-primary: black;
-$text-color-secondary: white;
+$text-color-primary: white;
+$text-color-secondary: #0c2d48;
 
 $font-size-main: 90px;
 $font-size-big-title: 60px;
@@ -20,15 +17,10 @@ $laptop-breakpoints: 1024px;
 $tablets-breakpoints: 768px;
 $mobile-breakpoints: 480px;
 
-hr {
-  border: none;
-  width: 75%;
-  border-top: 8px double white;
-}
-
 h1,
 h2 {
   font-size: $font-size-main;
+
   @media (max-width: $tablets-breakpoints) {
     font-size: $font-size-big-title;
   }
@@ -39,6 +31,17 @@ h4 {
   justify-content: center;
   font-size: $font-size-title;
   margin: 0;
+}
+
+.section-title {
+  border-bottom: 1px solid $tertiary-color;
+  width: 50%;
+  padding-bottom: 30px;
+  text-align: center;
+
+  @media (max-width: $tablets-breakpoints) {
+    width: 75%;
+  }
 }
 
 .-padding-bot-40 {

@@ -26,7 +26,6 @@ function Projet() {
 
   return (
     <>
-      <hr />
       <section className="projet -padding-bot-40" id="projets">
         <div
           onClick={handleOverlayClick}
@@ -36,7 +35,7 @@ function Projet() {
             <ModalProject projet={modalProjetInfo} OnClick={handleCloseModal} />
           )}
         </div>
-        <h2>Projets Client</h2>
+        <h2 className="section-title">Projets Formation</h2>
         <div className="projet-container">
           {projetList.map((projet, index) => (
             <figure
@@ -51,7 +50,7 @@ function Projet() {
           ))}
         </div>
         <div className="cut"></div>
-        <h2>Projets Perso</h2>
+        <h2 className="section-title">Projets Perso</h2>
         <div className="projet-container">
           {projetPerso.map((projet, index) => (
             <figure

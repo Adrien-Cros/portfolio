@@ -3,7 +3,6 @@ import './Specification.scss'
 function Specification() {
   return (
     <>
-      <hr />
       <section className="specification" id="specification">
         <div className="spec-overlay -top">
           <div className="spec-container">Veille</div>

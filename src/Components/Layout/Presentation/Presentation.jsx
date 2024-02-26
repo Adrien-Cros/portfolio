@@ -7,9 +7,8 @@ function Presentation() {
 
   return (
     <>
-      <hr />
       <section className="presentation -padding-bot-40" id="presentation">
-        <h2>Présentation</h2>
+        <h2 className="section-title">Présentation</h2>
         <div className="presentation-text">
           <p>
             Je suis un <span>développeur junior</span> passionné par le web et
@@ -41,7 +40,7 @@ function Presentation() {
           </div>
         </div>
         <div className="presentation-tech">
-          <h3>J'ai quelques notions: </h3>
+          <h3>Je suis en train d'apprendre: </h3>
           <div className="presentation-tech-container">
             {connaissanceTechList.map((tech, index) => (
               <div key={tech.name}>

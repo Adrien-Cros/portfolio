@@ -6,7 +6,13 @@ function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['introduction', 'presentation', 'projets', 'contact']
+      const sections = [
+        'introduction',
+        'presentation',
+        'formation',
+        'projets',
+        'contact',
+      ]
       const scrollPosition = window.scrollY + window.innerHeight / 2
       const currentSection = sections.find((sectionId) => {
         const section = document.getElementById(sectionId)
@@ -32,36 +38,35 @@ function Header() {
 
   return (
     <header>
+      <div className="header-title">Adrien Cros</div>
       <nav>
         <div
           onClick={() => scrollToSection('introduction')}
-          className={`header-part ${
-            currentSection === 'introduction' ? '-selected' : ''
-          }`}
+          className={` ${currentSection === 'introduction' ? 'selected' : ''}`}
         >
           Introduction
         </div>
         <div
           onClick={() => scrollToSection('presentation')}
-          className={`header-part ${
-            currentSection === 'presentation' ? '-selected' : ''
-          }`}
+          className={` ${currentSection === 'presentation' ? 'selected' : ''}`}
         >
           Présentation
         </div>
         <div
+          onClick={() => scrollToSection('formation')}
+          className={` ${currentSection === 'formation' ? 'selected' : ''}`}
+        >
+          Mes formations
+        </div>
+        <div
           onClick={() => scrollToSection('projets')}
-          className={`header-part ${
-            currentSection === 'projets' ? '-selected' : ''
-          }`}
+          className={` ${currentSection === 'projets' ? 'selected' : ''}`}
         >
           Projets
         </div>
         <div
           onClick={() => scrollToSection('contact')}
-          className={`header-part ${
-            currentSection === 'contact' ? '-selected' : ''
-          }`}
+          className={` ${currentSection === 'contact' ? 'selected' : ''}`}
         >
           Contact
         </div>

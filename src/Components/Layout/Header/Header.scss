@@ -1,44 +1,68 @@
 @import '../../../Styles/global-styles.scss';
 
 header {
-  position: fixed;
+  position: sticky;
+  top: 0;
   z-index: 1000;
-  width: 100%;
-  background-color: $primary-color;
-  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 30px 10px 30px;
+  font-size: $font-size-title;
+  color: $primary-color;
+  background-color: $secondary-color;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+
+  @media (max-width: 1320px) {
+    font-size: 16px;
+  }
+  @media (max-width: $tablets-breakpoints) {
+    font-size: $font-size-text;
+    justify-content: space-between;
+  }
+  @media (max-width: $mobile-breakpoints) {
+    font-size: 12px;
+  }
+
+  .header-title {
+    font-weight: bold;
+    font-size: 24px;
+    font-style: italic;
+
+    @media (max-width: 1320px) {
+      font-size: 16px;
+    }
+    @media (max-width: 580px) {
+      font-size: 14px;
+    }
+  }
 
   nav {
     display: flex;
     justify-content: space-evenly;
-    height: 100%;
+    flex-wrap: wrap;
+    width: 50%;
+    gap: 11px;
 
-    .header-part {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 25%;
-      border: 2px solid black;
-      color: $text-color-primary;
-      font-size: $font-size-title;
-      transition: all 350ms ease;
+    @media (max-width: $laptop-breakpoints) {
+      width: 75%;
+    }
+    @media (max-width: $tablets-breakpoints) {
+      width: 80%;
+    }
+    @media (max-width: 580px) {
+      width: 83%;
+    }
 
-      @media (max-width: 550px) {
-        font-size: 12px;
-      }
-
+    div {
+      transition: all 250ms ease;
       &:hover {
-        background: black;
-        color: white;
         cursor: pointer;
-        box-shadow: 0px 12px 12px 0px black;
+        color: blue;
       }
     }
+  }
 
-    .-selected {
-      cursor: pointer;
-      box-shadow: 0px 12px 12px 0px black;
-      font-weight: bold;
-      text-decoration: underline;
-    }
+  .selected {
+    text-decoration: underline;
   }
 }

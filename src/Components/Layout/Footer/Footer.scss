@@ -2,7 +2,7 @@
 
 footer {
   background: $tertiary-color;
-  margin-top: 20px;
+  color: $secondary-color;
   padding: 10px;
   display: flex;
   justify-content: space-evenly;
@@ -35,8 +35,8 @@ footer {
 
       a {
         text-decoration: none;
-        color: $text-color-primary;
         font-size: $font-size-text;
+        color: $secondary-color;
 
         @media (max-width: $mobile-breakpoints) {
           font-size: 12px;

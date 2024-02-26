@@ -1,0 +1,46 @@
+@import '../../Styles/global-styles.scss';
+
+.formation-projet {
+  display: flex;
+  background: rgb(228, 234, 236);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 30px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 0px 36px -18px inset;
+
+  &-number {
+    font-size: $font-size-title;
+    font-weight: bold;
+    i {
+      color: #2ad22a;
+    }
+  }
+  &-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  &-description {
+    font-size: 16px;
+  }
+
+  .barre-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+
+    .point {
+      width: 8px;
+      height: 10px;
+      background: $tertiary-color;
+      border-radius: 6px;
+      margin-bottom: 5px;
+    }
+    .barre {
+      height: 100%;
+      width: 4px;
+      background: lightblue;
+    }
+  }
+}

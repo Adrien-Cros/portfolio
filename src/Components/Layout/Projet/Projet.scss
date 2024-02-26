@@ -5,7 +5,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: $background-color;
+  background: $primary-color;
+  color: $secondary-color;
 
   .cut {
     width: 80%;
@@ -43,6 +44,8 @@
     justify-content: space-between;
     border: 2px solid black;
     transition: all 250ms;
+    background: $tertiary-color;
+    box-shadow: rgba(0, 64, 255, 0.4) 0px 0px 10px 4px;
 
     @media (max-width: $mobile-breakpoints) {
       width: 200px;

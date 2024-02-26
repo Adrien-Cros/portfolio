@@ -1,5 +1,5 @@
 import './ModalProject.scss'
-import githubImg from '../../../Assets/github.png'
+import githubImg from '../../../Assets/github.webp'
 import technoData from '../../../Data/techno.json'
 import GithubLanguages from '../../GithubLanguages/GithubLanguages'
 

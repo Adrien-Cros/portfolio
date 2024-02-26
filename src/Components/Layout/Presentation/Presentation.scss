@@ -4,7 +4,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $background-color;
+  background-color: $primary-color;
+  color: $text-color-primary;
 
   h2 {
     @media (max-width: $mobile-breakpoints) {
@@ -21,7 +22,7 @@
     font-size: $font-size-title;
     padding: 20px;
 
-    @media (max-width: $mobile-breakpoints) {
+    @media (max-width: $tablets-breakpoints) {
       font-size: $font-size-text;
       width: 90%;
     }

@@ -1,0 +1,64 @@
+{
+  "formation": [
+    {
+      "id": 1,
+      "title": "Démarrez votre formation d'intégrateur web",
+      "description": "Découvrez vos projets et planifiez votre formation."
+    },
+    {
+      "id": 2,
+      "title": "Premiers pas sur le langage HTML",
+      "description": "Démarrez sur HTML et CSS en analysant et en complétant une page internet."
+    },
+    {
+      "id": 3,
+      "title": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
+      "description": "Démarrez sur HTML et CSS en intégrant la page Web de Booki, une plateforme de réservation de vacances."
+    },
+    {
+      "id": 4,
+      "title": "Améliorez l'interface d'un site mobile avec des animations CSS",
+      "description": "Implémentez le site d’une foodtech en mobile first et ses animations CSS avec Sass."
+    },
+    {
+      "id": 5,
+      "title": "Premiers pas sur le langage JavaScript",
+      "description": "Réalisez le carrousel du site Internet d’une imprimerie avec JavaScript."
+    },
+    {
+      "id": 6,
+      "title": "Créez une page web dynamique avec JavaScript",
+      "description": "Aidez votre équipe à finaliser le nouveau site internet d’une architecte grâce à la création d’un site dynamique avec JavaScript, communiquant avec une API."
+    },
+    {
+      "id": 7,
+      "title": "Planifiez le développement du site de votre client",
+      "description": "Planifiez chacune des étapes du projet de développement d’un site de création de menus pour les restaurateurs."
+    },
+    {
+      "id": 8,
+      "title": "Créez une application web de location immobilière avec React",
+      "description": "Implémentez le front end de Kasa, une application de location de logements. Mettez en place des composants avec React et les routes de l'application avec React Router."
+    },
+    {
+      "id": 9,
+      "title": "Optimisez le référencement d'un site de photographe",
+      "description": "Aidez votre client à apparaître en tête des résultats de recherche Google grâce aux bonnes pratiques de SEO et d’accessibilité."
+    },
+    {
+      "id": 10,
+      "title": "Débuggez le site d'une agence d'événementiel",
+      "description": "Prenez le relais d’un autre développeur pour débugger le site de l’agence 724events."
+    },
+    {
+      "id": 11,
+      "title": "Implémentez le front-end d'une application bancaire avec React",
+      "description": "Complétez le code de l'application bancaire Argent Bank avec React et Redux. Vous écrirez des appels à l'API REST pour connecter le front au back et vous modéliserez une API."
+    },
+    {
+      "id": 12,
+      "title": "Créez et publiez votre portfolio de développeur",
+      "description": "Débuggez votre portfolio et optimisez la performance du code et du référencement SEO avant de le déployer en ligne afin de donner de la visibilité à vos projets."
+    }
+  ]
+}
