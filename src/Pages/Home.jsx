@@ -16,7 +16,12 @@ function Home() {
   const [showReturnToTop, setShowReturnToTop] = useState(false)
 
   const handleClick = () => {
-    heroSection.current.scrollIntoView({ behavior: 'smooth' })
+    const yOffset = -100
+    const element = heroSection.current
+
+    const y = element.getBoundingClientRect().top + window.scrollY + yOffset
+
+    window.scrollTo({ top: y, behavior: 'smooth' })
   }
 
   useEffect(() => {

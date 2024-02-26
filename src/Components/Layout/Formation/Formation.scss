@@ -21,6 +21,12 @@
 
     .formation {
       width: 50%;
+      border: 2px solid black;
+      background: #e5e7eae6;
+      padding: 10px;
+      box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+        rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+        rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 
       @media (max-width: $mobile-breakpoints) {
         width: 85%;
@@ -43,14 +49,15 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100px;
+      height: 160px;
       margin-bottom: 50px;
 
       @media (max-width: $tablets-breakpoints) {
-        height: 150px;
+        height: 250px;
+        margin-bottom: 0px;
       }
       @media (max-width: $mobile-breakpoints) {
-        height: 100px;
+        height: 160px;
         margin-bottom: -20px;
       }
 

@@ -14,17 +14,24 @@ function ModalProject({ projet, OnClick }) {
           X
         </div>
       </div>
-
       <div className="modal-project-container">
-        <a
-          href={projet.github}
-          className="modal-github-link"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img className="github-img" src={githubImg} alt="Github Icon" />
-          Github
-        </a>
+        <div className="modal-techno">
+          {projet.techno.map((technoName, index) => {
+            const technoImg = technoList.find(
+              (techno) => techno.name === technoName
+            )
+            return (
+              technoImg && (
+                <img
+                  className="modal-tech-image"
+                  key={technoImg.id}
+                  src={technoImg.icon}
+                  alt={technoImg.name}
+                />
+              )
+            )
+          })}
+        </div>
         <img className="modal-image" src={projet.image} alt={projet.name} />
         <div className="modal-informations">
           <div className="modal-description">{projet.description}</div>
@@ -35,27 +42,18 @@ function ModalProject({ projet, OnClick }) {
               ))}
             </ul>
           </div>
-          <div className="modal-techno">
-            {projet.techno.map((technoName, index) => {
-              const technoImg = technoList.find(
-                (techno) => techno.name === technoName
-              )
-              return (
-                technoImg && (
-                  <img
-                    className="modal-tech-image"
-                    key={technoImg.id}
-                    src={technoImg.icon}
-                    alt={technoImg.name}
-                  />
-                )
-              )
-            })}
-          </div>
-
           <div className="modal-language">
             <GithubLanguages repoName={projet?.repoName} />
           </div>
+          <a
+            href={projet.github}
+            className="modal-github-link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img className="github-img" src={githubImg} alt="Github Icon" />
+            Github
+          </a>
         </div>
       </div>
     </div>

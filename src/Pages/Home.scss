@@ -59,7 +59,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: calc(100vh - 56px);
     overflow: hidden;
 
     &-container {
@@ -174,7 +174,7 @@ main {
 
   i {
     font-size: 24px;
-    animation: return-arrow 2s ease-in-out infinite;
+    animation: return-arrow 1.8s ease-in-out infinite;
     @media (max-width: $laptop-breakpoints) {
       font-size: 12px;
     }
