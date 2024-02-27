@@ -16,6 +16,7 @@ function Home() {
   const [showReturnToTop, setShowReturnToTop] = useState(false)
 
   const handleClick = () => {
+    // Creating offset for the header
     const yOffset = -100
     const element = heroSection.current
 
@@ -67,7 +68,6 @@ function Home() {
           </div>
         )}
       </main>
-
       <Footer />
     </>
   )

@@ -32,7 +32,14 @@ function Header() {
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId)
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' })
+      // Creating offset for the header
+      if (section.id === 'introduction') {
+        const yOffset = -100
+        const y = section.getBoundingClientRect().top + window.scrollY + yOffset
+        window.scrollTo({ top: y, behavior: 'smooth' })
+      } else {
+        section.scrollIntoView({ behavior: 'smooth' })
+      }
     }
   }
 
