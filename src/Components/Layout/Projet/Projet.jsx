@@ -44,7 +44,12 @@ function Projet() {
               onClick={() => handleOpenModal(projet)}
             >
               <div className="projet-title">{projet.name}</div>
-              <img className="projet-img" src={projet.icon} alt={projet.name} />
+              <img
+                className="projet-img"
+                src={projet.icon}
+                alt={projet.name}
+                loading="lazy"
+              />
               <figcaption>{projet.description}</figcaption>
             </figure>
           ))}
@@ -59,7 +64,12 @@ function Projet() {
               onClick={() => handleOpenModal(projet)}
             >
               <div className="projet-title">{projet.name}</div>
-              <img className="projet-img" src={projet.icon} alt={projet.name} />
+              <img
+                className="projet-img"
+                src={projet.icon}
+                alt={projet.name}
+                loading="lazy"
+              />
               <figcaption>{projet.description}</figcaption>
             </figure>
           ))}

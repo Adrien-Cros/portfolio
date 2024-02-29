@@ -1,1 +1,47 @@
 @import '../../../Styles/global-styles.scss';
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $secondary-color;
+  color: $tertiary-color;
+
+  h2 {
+    @media (max-width: $mobile-breakpoints) {
+      font-size: 48px;
+    }
+  }
+
+  .link-container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-evenly;
+
+    @media (max-width: $tablets-breakpoints) {
+      width: 80%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .contact-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      text-decoration: none;
+
+      a {
+        font-size: $font-size-title;
+        color: $primary-color;
+      }
+
+      img {
+        width: 48px;
+        height: 48px;
+      }
+    }
+  }
+}

@@ -8,6 +8,7 @@ import Projet from '../Components/Layout/Projet/Projet'
 import Presentation from '../Components/Layout/Presentation/Presentation'
 import Specification from '../Components/Layout/Specification/Specification'
 import Formation from '../Components/Layout/Formation/Formation'
+import Contact from '../Components/Layout/Contact/Contact'
 
 import './Home.scss'
 
@@ -68,6 +69,7 @@ function Home() {
           </div>
         )}
       </main>
+      <Contact />
       <Footer />
     </>
   )
