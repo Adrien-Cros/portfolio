@@ -7,12 +7,6 @@
   background-color: $primary-color;
   color: $text-color-primary;
 
-  h2 {
-    @media (max-width: $mobile-breakpoints) {
-      font-size: 48px;
-    }
-  }
-
   &-text {
     display: flex;
     flex-direction: column;

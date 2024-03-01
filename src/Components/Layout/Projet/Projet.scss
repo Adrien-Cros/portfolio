@@ -16,12 +16,6 @@
     margin-top: 70px;
   }
 
-  h2 {
-    @media (max-width: $mobile-breakpoints) {
-      font-size: $font-size-big-title;
-    }
-  }
-
   &-container {
     display: flex;
     justify-content: space-evenly;

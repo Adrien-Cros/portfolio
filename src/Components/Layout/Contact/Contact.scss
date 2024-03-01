@@ -7,12 +7,6 @@
   background-color: $secondary-color;
   color: $tertiary-color;
 
-  h2 {
-    @media (max-width: $mobile-breakpoints) {
-      font-size: 48px;
-    }
-  }
-
   .link-container {
     display: flex;
     align-items: center;
@@ -36,6 +30,10 @@
       a {
         font-size: $font-size-title;
         color: $primary-color;
+
+        @media (max-width: $mobile-breakpoints) {
+          font-size: 18px;
+        }
       }
 
       img {
